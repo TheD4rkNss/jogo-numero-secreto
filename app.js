@@ -1,5 +1,5 @@
 let listaNumero = [];
-let maximo = 10;
+let maximo = 100;
 let numeroSecreto = numeroAleatorio();
 let tentativas = 1;
 
@@ -17,7 +17,6 @@ function verificarChute() {
         exibirTexto('p',mensagemTentativas);
         exibirTexto('h1','Parabéns!');
         document.getElementById('reiniciar').removeAttribute('disabled');
-
     } else {
         exibirTexto('h1','Tente Novamente!');
         if (chute > numeroSecreto) {
@@ -57,6 +56,7 @@ function reiniciarJogo() {
 }
 
 function textoInicial() {
+
 exibirTexto('h1','Jogo do Número Secreto')
 exibirTexto('p',`Tente adivinhar o número secreto entre 1 e ${maximo}.`)
 }
