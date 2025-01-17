@@ -44,7 +44,6 @@ function numeroAleatorio () {
 
 }
 
-
 function limparCampo() {
     document.querySelector('input').value = '';
 }
